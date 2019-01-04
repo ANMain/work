@@ -1,0 +1,15 @@
+#!/bin/bash
+master() {
+  echo "git fetch -p"
+  git fetch -p
+  echo "git checkout master"
+  git checkout master
+  echo "git pull"
+  git pull
+  echo "branch -d $1"
+  git branch -d $1
+  echo "git branch -a"
+  git branch -a
+}
+
+master $1
