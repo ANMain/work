@@ -2,4 +2,4 @@ https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and
 
 oh-my-posh --init --shell pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
 
-New-Alias master 'C:\Users\andrew.n.main\OneDrive - Education First\master.ps1'
+New-Alias master 'C:\Users\<path to>\master.ps1'
