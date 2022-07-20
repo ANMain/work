@@ -1,0 +1,5 @@
+https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal
+
+oh-my-posh --init --shell pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
+
+New-Alias master 'C:\Users\andrew.n.main\OneDrive - Education First\master.ps1'
