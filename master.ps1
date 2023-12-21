@@ -1,19 +1,21 @@
 param([String]$branchName) 
 
-echo "git fetch -p"
+Write-Host "git fetch -p" -ForegroundColor Cyan
 git fetch -p
-echo "git checkout master"
+Write-Host "git checkout master" -ForegroundColor Cyan
 git checkout master
-echo "git pull"
+Write-Host "git pull" -ForegroundColor Cyan
 git pull
 
 if($branchName)
 {
-  echo "branch -d $branchName"
+  Write-Host "git branch -d $branchName" -ForegroundColor Cyan
   git branch -d $branchName
 }
 
-echo "git branch -a"
-git branch -a
-echo "git gc"
+Write-Host "git --no-pager branch -a" -ForegroundColor Cyan
+git --no-pager branch -a
+Write-Host "git clean -fd" -ForegroundColor Cyan
+git clean -fd
+Write-Host "git gc" -ForegroundColor Cyan
 git gc
